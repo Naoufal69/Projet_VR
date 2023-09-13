@@ -4,22 +4,42 @@ using UnityEngine;
 
 public class Salle1 : MonoBehaviour
 {
-    public GameObject Porte1;
-    public GameObject Objet_Salle1; // Ajout de cette ligne
+    public GameObject Porte;
     public float porteVitesse = 1.0f; // Vitesse de déplacement de la porte
-    private bool hasCollided = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private Vector3 startPosition;
+    private Vector3 endPosition;
+    private bool isMoving = false;
+
+    private void Start()
     {
+        startPosition = new Vector3(Porte.transform.position.x, Porte.transform.position.y, Porte.transform.position.z);
+        endPosition = new Vector3(Porte.transform.position.x, Porte.transform.position.y, -27.0f);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject == Objet_Salle1 && !hasCollided)
+        if (other.gameObject.tag == "objet1_salle1" && !isMoving)
         {
-            hasCollided = true;
-            Porte1.transform.Translate(Vector3.left * porteVitesse * Time.deltaTime);
+            print("Collision");
+            StartCoroutine(MoveDoor());
         }
+    }
+
+    IEnumerator MoveDoor()
+    {
+        isMoving = true;
+        float journeyLength = Vector3.Distance(startPosition, endPosition);
+        float distanceCovered = 0;
+
+        while (distanceCovered < journeyLength)
+        {
+            float moveDistance = porteVitesse * Time.deltaTime;
+            distanceCovered += moveDistance;
+            Porte.transform.position = Vector3.MoveTowards(Porte.transform.position, endPosition, moveDistance);
+            yield return null;
+        }
+
+        isMoving = false;
     }
 }
