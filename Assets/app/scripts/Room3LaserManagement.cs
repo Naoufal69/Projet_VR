@@ -47,6 +47,7 @@ public class Room3LaserManagement : Room
             }
         }
         Debug.Log("Salle validée");
+        this.openDoor();
         return true; 
     }
 }
