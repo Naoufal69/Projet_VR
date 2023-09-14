@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 219318614}
   - component: {fileID: 219318613}
   - component: {fileID: 219318612}
+  - component: {fileID: 219318615}
   m_Layer: 0
   m_Name: Laser3
   m_TagString: laser
@@ -783,6 +784,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219318610}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &219318615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219318610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9080115ae493f49b2ed10a9edb40e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: 8c85ace827a9e074db7988e55697b634, type: 2}
+  m_overrideExternalProperties: 1
+  m_inspectorProperties:
+    m_layerMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    m_physicsType: 1
+    m_rayWidth: 0.08
+    m_angularRange: 360
+    m_raysNumber: 1
+    m_minRadialDistance: 1
+    m_maxRadialDistance: 25
+    m_rotate: 0
+    m_rotateClockwise: 0
+    m_rotationSpeed: 20
+    m_intermittent: 0
+    m_intervalTime: 2
+    m_initialTimingPhase: 0
 --- !u!1 &288954597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3032,6 +3063,7 @@ GameObject:
   - component: {fileID: 1081144897}
   - component: {fileID: 1081144896}
   - component: {fileID: 1081144895}
+  - component: {fileID: 1081144898}
   m_Layer: 0
   m_Name: Laser1
   m_TagString: laser
@@ -3125,6 +3157,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081144893}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1081144898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081144893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9080115ae493f49b2ed10a9edb40e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: 8c85ace827a9e074db7988e55697b634, type: 2}
+  m_overrideExternalProperties: 1
+  m_inspectorProperties:
+    m_layerMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    m_physicsType: 1
+    m_rayWidth: 0.08
+    m_angularRange: 360
+    m_raysNumber: 1
+    m_minRadialDistance: 1
+    m_maxRadialDistance: 25
+    m_rotate: 0
+    m_rotateClockwise: 0
+    m_rotationSpeed: 20
+    m_intermittent: 0
+    m_intervalTime: 2
+    m_initialTimingPhase: 0
 --- !u!1 &1101059865
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,6 +5138,7 @@ GameObject:
   - component: {fileID: 1599489806}
   - component: {fileID: 1599489805}
   - component: {fileID: 1599489804}
+  - component: {fileID: 1599489807}
   m_Layer: 0
   m_Name: Laser2
   m_TagString: laser
@@ -5169,6 +5232,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599489802}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1599489807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599489802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9080115ae493f49b2ed10a9edb40e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: 8c85ace827a9e074db7988e55697b634, type: 2}
+  m_overrideExternalProperties: 1
+  m_inspectorProperties:
+    m_layerMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    m_physicsType: 1
+    m_rayWidth: 0.08
+    m_angularRange: 360
+    m_raysNumber: 1
+    m_minRadialDistance: 1
+    m_maxRadialDistance: 25
+    m_rotate: 0
+    m_rotateClockwise: 0
+    m_rotationSpeed: 20
+    m_intermittent: 0
+    m_intervalTime: 2
+    m_initialTimingPhase: 0
 --- !u!1 &1645091675
 GameObject:
   m_ObjectHideFlags: 0

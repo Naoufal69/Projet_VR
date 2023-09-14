@@ -26,18 +26,19 @@ public class Room3LaserManagement : MonoBehaviour
         {
             int iteration = lasers.IndexOf(laser); 
             RaycastHit hit;
+            Ray ray = new Ray(laser.transform.position, laser.gameObject.transform.forward); 
             // Does the ray intersect any objects excluding the player layer
-            if (Physics.Raycast(laser.transform.position, laser.gameObject.transform.forward, out hit, 3))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 if (hit.collider.gameObject.tag == "receptor")
                 {
-                    Debug.DrawRay(laser.transform.position, laser.gameObject.transform.forward * 3f, Color.red);
+                    Debug.DrawRay(ray.origin, hit.collider.gameObject.transform.position, Color.red);
                     Debug.Log("Did Hit");
                     Debug.Log(iteration + "marche");
                 }
                 else
                 {
-                    Debug.DrawRay(laser.transform.position, laser.gameObject.transform.forward * 3f, Color.blue);
+                    Debug.DrawRay(ray.origin, ray.direction, Color.blue);
                     Debug.Log("Did not Hit");
                     Debug.Log(iteration + "marche pas");
                 }
