@@ -8,6 +8,8 @@ TagManager:
   - GREEN
   - BLUE
   - PORTE
+  - receptor
+  - laser
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - laser
   - 
   - 
   - 
