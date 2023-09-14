@@ -30,7 +30,7 @@ public class Room3LaserManagement : Room
                 else
                 {
                     laser.desactivateReceptor();
-                    isRoomComplete(); 
+                    this.roomIsComplete(isRoomComplete()); 
                 }
             }    
         }
