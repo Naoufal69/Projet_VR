@@ -172,7 +172,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -561,7 +561,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -728,7 +728,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -803,7 +803,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1024
     m_physicsType: 1
-    m_rayWidth: 0.08
+    m_rayWidth: 0.05
     m_angularRange: 360
     m_raysNumber: 1
     m_minRadialDistance: 1
@@ -2814,7 +2814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2822,7 +2822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3101,7 +3101,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3176,7 +3176,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1024
     m_physicsType: 1
-    m_rayWidth: 0.08
+    m_rayWidth: 0.05
     m_angularRange: 360
     m_raysNumber: 1
     m_minRadialDistance: 1
@@ -3387,7 +3387,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3767,7 +3767,7 @@ GameObject:
   - component: {fileID: 1306931345}
   - component: {fileID: 1306931344}
   - component: {fileID: 1306931343}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3854,7 +3854,7 @@ Transform:
   m_GameObject: {fileID: 1306931342}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.598, y: 0.64, z: 3.297}
+  m_LocalPosition: {x: 0.439, y: 0.878, z: 2.378}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5176,7 +5176,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5251,7 +5251,7 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1024
     m_physicsType: 1
-    m_rayWidth: 0.08
+    m_rayWidth: 0.05
     m_angularRange: 360
     m_raysNumber: 1
     m_minRadialDistance: 1
@@ -10775,7 +10775,7 @@ GameObject:
   - component: {fileID: 1753553304}
   - component: {fileID: 1753553303}
   - component: {fileID: 1753553302}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11416,7 +11416,7 @@ GameObject:
   - component: {fileID: 1936686064}
   - component: {fileID: 1936686063}
   - component: {fileID: 1936686062}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

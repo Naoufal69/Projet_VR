@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Room : MonoBehaviour
+public abstract class Room : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private bool roomComplete = false;
+
+    protected void roomIsComplete(bool newValue)
     {
-        
+        this.roomComplete = newValue; 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    protected abstract bool isRoomComplete(); 
 }
