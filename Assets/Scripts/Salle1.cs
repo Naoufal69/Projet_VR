@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Salle1 : MonoBehaviour
+public class Salle1 : Room
 {
-    public GameObject Porte;
+    private GameObject Porte;
     public float porteVitesse = 1.0f; // Vitesse de déplacement de la porte
 
     private Vector3 startPosition;
@@ -22,7 +22,8 @@ public class Salle1 : MonoBehaviour
         if (other.gameObject.tag == "objet1_salle1" && !isMoving)
         {
             print("Collision");
-            StartCoroutine(MoveDoor());
+            isRoomComplete();
+            /*StartCoroutine(MoveDoor());*/
         }
     }
 
@@ -41,5 +42,17 @@ public class Salle1 : MonoBehaviour
         }
 
         isMoving = false;
+    }
+
+    protected override bool isRoomComplete()
+    {
+            print("Collision");
+            this.roomIsComplete(true);
+            if (this.getRoomState())
+            {
+                this.openDoor();
+                return true; 
+            }
+            return false;
     }
 }
