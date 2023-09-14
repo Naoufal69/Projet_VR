@@ -10,6 +10,7 @@ TagManager:
   - PORTE
   - receptor
   - laser
+  - objet1_salle1
   layers:
   - Default
   - TransparentFX
