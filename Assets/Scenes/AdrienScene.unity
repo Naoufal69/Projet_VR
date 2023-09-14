@@ -135,9 +135,9 @@ GameObject:
   - component: {fileID: 2351954}
   - component: {fileID: 2351953}
   - component: {fileID: 2351952}
-  m_Layer: 0
-  m_Name: Laser1
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: receptor1
+  m_TagString: receptor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,7 +172,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -524,9 +524,9 @@ GameObject:
   - component: {fileID: 144392615}
   - component: {fileID: 144392614}
   - component: {fileID: 144392613}
-  m_Layer: 0
-  m_Name: Laser2
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: receptor2
+  m_TagString: receptor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,7 +561,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -692,7 +692,7 @@ GameObject:
   - component: {fileID: 219318612}
   m_Layer: 0
   m_Name: Laser3
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,12 +706,12 @@ Transform:
   m_GameObject: {fileID: 219318610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1949999, z: 0}
+  m_LocalPosition: {x: 0.008000017, y: 1.198, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1356438981}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!65 &219318612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -727,7 +727,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3034,7 +3034,7 @@ GameObject:
   - component: {fileID: 1081144895}
   m_Layer: 0
   m_Name: Laser1
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3049,11 +3049,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.6000001, y: 0.6, z: 0.6000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1356438981}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!65 &1081144895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3069,7 +3069,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3288,9 +3288,9 @@ GameObject:
   - component: {fileID: 1217573017}
   - component: {fileID: 1217573016}
   - component: {fileID: 1217573015}
-  m_Layer: 0
-  m_Name: Laser3
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: receptor3
+  m_TagString: receptor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3325,7 +3325,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4265,8 +4265,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1356438981}
+  - component: {fileID: 1356438982}
   m_Layer: 0
-  m_Name: Lasers
+  m_Name: LasersManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4280,8 +4281,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356438980}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.926, y: 0.422, z: 1.541}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1.926, y: 0.422, z: 1.466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4289,7 +4290,27 @@ Transform:
   - {fileID: 1599489803}
   - {fileID: 219318611}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1356438982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356438980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9641e7ec4e5a04cc4b96d871dc4f28bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lasers:
+  - {fileID: 1081144893}
+  - {fileID: 1599489802}
+  - {fileID: 219318610}
+  lasersReceptors:
+  - {fileID: 2351950}
+  - {fileID: 144392611}
+  - {fileID: 1217573013}
 --- !u!1 &1414778159
 GameObject:
   m_ObjectHideFlags: 0
@@ -5057,7 +5078,7 @@ GameObject:
   - component: {fileID: 1599489804}
   m_Layer: 0
   m_Name: Laser2
-  m_TagString: Untagged
+  m_TagString: laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5076,7 +5097,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1356438981}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!65 &1599489804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5092,7 +5113,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
